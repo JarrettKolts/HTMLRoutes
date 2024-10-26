@@ -3,7 +3,7 @@ const { readAndAppend, writeToFile, readFromFile } = require('../helpers/fsUtils
 const { v4:uuidv4 } = require('uuid'); // For generating unique note IDs
 
 // TODO: Define the path to the database JSON file
-const filePath = 
+const filePath = ('./db/db.json')
 
 router.get('/notes', (req, res) => {
     readFromFile(filePath)
